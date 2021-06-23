@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import signUpSchema from './CreateSchema';
+import signUpSchema from '../schemas/CreateSchema';
 import * as yup from 'yup';
 import axios from 'axios';
 import styled from 'styled-components';
