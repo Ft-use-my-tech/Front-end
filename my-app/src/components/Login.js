@@ -1,10 +1,13 @@
+import React, { useState } from 'react';
+import axios from 'axios';
+import { useHistory } from 'react-router';
 
 
 
 
-
-export const Login = () => {
+const Login = () => {
     const history = useHistory();
+    const [formValues, setFormValues] = useState()
 
     const onChange = e => {
         const { name, value } = e.target
@@ -22,22 +25,21 @@ export const Login = () => {
         })
     }
 
-    const [formValues, setFormValues] = useState(formValsInit)
 
     return(
         <div className='container'>
             <h2>Login</h2>
                 <form className='form-container' onSubmit={onSubmit}>
                     <input
-                        value={}
-                        onChange={}
+                        // value={}
+                        // onChange={}
                         name='username'
                         type='text'
                         placeholder='Username'
                     />
                     <input
-                        value={}
-                        onChange={}
+                        // value={}
+                        // onChange={}
                         name='password'
                         type='password'
                         placeholder='Password'
@@ -46,3 +48,5 @@ export const Login = () => {
         </div>
     )
 }
+
+export default Login;
