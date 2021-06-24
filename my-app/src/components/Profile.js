@@ -9,6 +9,12 @@ const StyledDiv = styled.div`
     justify-content: center;
     align-items:center;
 `
+const StyledTitle = styled.h2`
+    color:#1E90FF;
+    display:flex;
+    align-items:center;
+`
+
 const StyledButton = styled.button`
     background-color: #1E90FF;
     border: none;
@@ -26,7 +32,9 @@ const StyledButton = styled.button`
 const Profile = () => {
     return (
         <StyledDiv>
+                <StyledTitle>Profile</StyledTitle>
             <StyledButton>List item</StyledButton>
+            <br></br>
             <StyledButton>View listings</StyledButton>
         </StyledDiv>
     )
