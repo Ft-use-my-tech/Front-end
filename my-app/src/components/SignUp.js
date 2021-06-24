@@ -37,6 +37,7 @@ const StyledLabel2 = styled.label`
 
 const StyledLabel3 = styled.label`
     color:indianred;
+    font-style:bold;
 `
 const StyledInput = styled.input`
     padding:10px;
