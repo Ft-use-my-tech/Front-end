@@ -23,7 +23,7 @@ const StyledText = styled.h4`
     color: #1E90FF;
     display:flex;
     align-items:center;
-    padding-left: 50px;
+    padding-left: 35px;
 `
 
 const StyledLabel1 = styled.label`
@@ -154,7 +154,7 @@ const formSubmit = () => {
 
                     {/* Text Inputs for new User Sign Up form */}
 
-                <StyledLabel1>Name:&nbsp;
+                <StyledLabel1>&nbsp;
                     <StyledInput
                         value={formValues.name}
                         onChange={onChange}
@@ -164,7 +164,7 @@ const formSubmit = () => {
                     />
                 </StyledLabel1>
                 <br></br>
-                <StyledLabel2>Password:&nbsp;
+                <StyledLabel2>&nbsp;
                     <StyledInput
                         value={formValues.password}
                         onChange={onChange}
