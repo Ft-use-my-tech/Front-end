@@ -5,7 +5,7 @@ import axios from 'axios';
 import styled from 'styled-components';
 
 const StyledForm = styled.form`
-    background-color:burlywood;
+    background-color:black;
     border-radius: 15px;
     display:flex;
     flex-direction:column;

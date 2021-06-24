@@ -4,14 +4,13 @@ import { useHistory } from 'react-router';
 import styled from 'styled-components';
 
 const StyledForm = styled.form`
-    background-color:burlywood;
+    background-color:black;
     border-radius: 15px;
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items:center;
 `
-
 const StyledTitle = styled.h2`
     color:#1E90FF;
     display:flex;
