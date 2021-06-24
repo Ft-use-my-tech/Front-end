@@ -1,8 +1,40 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router';
+import styled from 'styled-components';
 
+const StyledForm = styled.form`
+    background-color:burlywood;
+    border-radius: 15px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+`
 
+const StyledTitle = styled.h2`
+    color:#1E90FF;
+    display:flex;
+    align-items:center;
+`
+const StyledButton = styled.button`
+    background-color: #1E90FF;
+    border: none;
+    border-radius:10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+`
+const StyledInput = styled.input`
+    padding:10px;
+    margin:10px 0;
+    border-radius: 10px;
+`
 
 
 const Login = () => {
@@ -28,23 +60,26 @@ const Login = () => {
 
     return(
         <div className='container'>
-            <h2>Login</h2>
-                <form className='form-container' onSubmit={onSubmit}>
-                    <input
+                <StyledForm className='form-container' onSubmit={onSubmit}>
+                    <StyledTitle>Login</StyledTitle>
+
+                    <StyledInput
                         // value={}
                         // onChange={}
                         name='username'
                         type='text'
                         placeholder='Username'
                     />
-                    <input
+                    <StyledInput
                         // value={}
                         // onChange={}
                         name='password'
                         type='password'
                         placeholder='Password'
                     />
-                </form>
+
+            <StyledButton id='login-button'>Login</StyledButton>
+                </StyledForm>
         </div>
     )
 }
